@@ -1,6 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
+@import '_styleRules.scss';
+
+@mixin pad($upDown, $side) {
+    padding-top: $upDown;
+    padding-bottom: $upDown;
+    padding-left: $side;
+    padding-right: $side;
 }
 
 main {
@@ -16,12 +20,18 @@ main {
     justify-self: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    @include pad (15px, 25px);
+    width: 50vw;
+    border-style: solid;
     row-gap: 10px;
+    background-color: rgba(192, 192, 192, 0.53);
 }
 
 .saveState {
     display: grid;
     grid-auto-flow: column;
+    column-gap: 5px;
+    border-bottom: dashed;
 
     h5 {
         justify-self: left;
@@ -30,4 +40,17 @@ main {
     p {
         justify-self: right;
     }
+
+    &:hover {
+        background: silver;
+    }
+
+    &:active {
+        background: rgba(124, 175, 48, 0.571);
+    }
+}
+
+#confirmButton {
+    justify-self: center;
+    width: 10vw;
 }
