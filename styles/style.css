@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+}
+
+#newChoice {
+  display: none;
+}
+
+#saveStateContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  row-gap: 10px;
+}
+
+.saveState {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.saveState h5 {
+  -ms-grid-column-align: left;
+      justify-self: left;
+}
+
+.saveState p {
+  -ms-grid-column-align: right;
+      justify-self: right;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: grid;
+}
+
+#newChoice {
+    display: none;
+}
+
+#saveStateContainer {
+    display: grid;
+    justify-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    row-gap: 10px;
+}
+
+.saveState {
+    display: grid;
+    grid-auto-flow: column;
+
+    h5 {
+        justify-self: left;
+    }
+
+    p {
+        justify-self: right;
+    }
+}
