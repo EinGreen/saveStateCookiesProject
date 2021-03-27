@@ -1,1 +1,6 @@
 @import '_styleRules.scss';
+
+main {
+    display: grid;
+    justify-items: center;
+}

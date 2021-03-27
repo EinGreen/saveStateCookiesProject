@@ -6,4 +6,10 @@
 body {
   background: #6ee0ff;
 }
+
+main {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
 /*# sourceMappingURL=style2.css.map */
